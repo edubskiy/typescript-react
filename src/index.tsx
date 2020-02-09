@@ -7,7 +7,7 @@ import thunk from 'redux-thunk';
 const store = createStore(reducers, applyMiddleware(thunk));
 
 ReactDOM.render(
-  <Provider>
+  <Provider store={store}>
     <App color="red" />
   </Provider>,
   document.querySelector('#root')
