@@ -1,5 +1,4 @@
-import { ActionTypes } from '../actions/types';
-import { Todo, FetchTodosAction } from '../actions';
+import { Todo, FetchTodosAction, ActionTypes } from '../actions';
 
 export const todosReducer = (
   state: Todo[] = [],
