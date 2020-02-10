@@ -9,6 +9,12 @@ interface AppProps {
 }
 
 export class _App extends React.Component<AppProps> {
+  constructor(props: AppProps) {
+    super(props);
+
+    this.onButtonClick = this.onButtonClick.bind(this);
+  }
+
   onButtonClick() {
     this.props.fetchTodos();
   }
